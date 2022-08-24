@@ -1,0 +1,9 @@
+--Credits to WoahChris#7415
+task.wait(7)
+if game.PlaceId == 6839171747 -- inGame ID
+then
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+game:GetService("ReplicatedStorage").Bricks.PlayAgain:FireServer()
+else
+    game:GetService("TeleportService"):Teleport(6839171747, LocalPlayer)
+end
